@@ -1,12 +1,12 @@
 <template>
-  <div class="year">
+  <div class="trivia">
     <p>
-      <router-link to="/">HOME: Number Trivia </router-link>
+      <router-link to="/year">GO TO: Year Facts</router-link>
     </p>
-    <h2>Year Facts</h2>
-    <form v-on:submit.prevent="findYear">
-      <p>Enter a year for a fact! 
-        <input type="text" v-model="year"> <button type="submit">Search</button>
+    <h2>Number Trivia</h2>
+    <form v-on:submit.prevent="findTrivia">
+      <p>Enter your integer of interest!
+        <input type="text" v-model="number"> <button type="submit">Search</button>
       </p>
     </form>
     {{ results }}
@@ -33,7 +33,7 @@
 <script>
 import axios from 'axios';
 export default {
-  name: 'Year',
+  name: 'Trivia',
   data () {
     return {
       results: null,
@@ -42,8 +42,8 @@ export default {
     }
   },
   methods: {
-    findYear: function (){
-      let url = `//numbersapi.com/${this.year}/year`
+    findTrivia: function (){
+      let url = `//numbersapi.com/${this.number}/trivia`
       console.log(url)
       axios.get(url, {
       })
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style scoped>
-.year {
+.trivia {
   font-size: 1.4rem;
 }
 input[type="text"]{

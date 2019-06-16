@@ -2,7 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Playground for the numerates. Number and date facts and trivia.
     </p>
   </div>
 </template>

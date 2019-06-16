@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <h1>NUMERATE PLAYGROUND</h1>
+    <p>For the love of all things dates and numbers</p>
     <router-view/>
   </div>
 </template>
