@@ -15,18 +15,18 @@
         <p><strong>{{item.word}}</strong></p>
         <p>{{item.score}}</p>
       </li>
-    </ul>  -->
+    </ul> 
 
-    <!-- <div class="no-results" v-else-if="results && results.length === 0">
+    <div class="no-results" v-else-if="results & results.length === 0">
       <h2>No Words Found</h2>
       <p>Please adjust your search to find more words.</p>
-    </div>
+    </div> -->
 
     <ul class="errors" v-if="errors && errors.length > 0">
       <li v-for="(error, index) of errors" :key="index">
         {{error.message}}
       </li>
-    </ul> -->
+    </ul>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <img alt="background image numbers" src="./assets/blackNumber.jpg" width="100%">
     <h1>NUMERATE PLAYGROUND</h1>
     <p>For the love of all things dates and numbers</p>
     <router-view/>
@@ -22,5 +22,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  /* background-image: url("./assets/blackNumber.jpg"); */
 }
+
+
 </style>
