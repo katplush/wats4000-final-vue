@@ -1,32 +1,22 @@
 <template>
   <div class="trivia">
+    
+    <h2>Number Trivia</h2>
     <p>
       <router-link to="/year">GO TO: Year Facts</router-link>
     </p>
-    <h2>Number Trivia</h2>
     <form v-on:submit.prevent="findTrivia">
       <p>Enter your integer of interest!
         <input type="text" v-model="number"> <button type="submit">Search</button>
       </p>
     </form>
-    {{ results }}
-    <!-- <ul v-if="results && results.length > 0" class="results">
-      <li class="item" v-for="(item, index) of results" :key="index">
-        <p><strong>{{item.word}}</strong></p>
-        <p>{{item.score}}</p>
-      </li>
-    </ul>  -->
-
-    <!-- <div class="no-results" v-else-if="results && results.length === 0">
-      <h2>No Words Found</h2>
-      <p>Please adjust your search to find more words.</p>
-    </div>
+    <p class="answer">{{ results }}</p>
 
     <ul class="errors" v-if="errors && errors.length > 0">
       <li v-for="(error, index) of errors" :key="index">
         {{error.message}}
       </li>
-    </ul> -->
+    </ul>
   </div>
 </template>
 
@@ -61,21 +51,24 @@ export default {
 <style scoped>
 .trivia {
   font-size: 1.4rem;
+  margin: 50px;
 }
 input[type="text"]{
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #333;
-  width: 300px;
+  width: 150px;
   font-size: 1.4rem;
   color: #2c3e50;
   font-weight: 300;
+  text-align: center;
   background: rgba(0,0,0,0.02);
   padding: 0.5rem;
 }
 button{
   background: #333;
+  margin: 10px;
   padding: 0.5rem;
   font-weight: 300;
   color: #fff;
@@ -110,8 +103,11 @@ ul.errors {
   margin: 10px 0;
 }
 a {
-  color: #42b983;
+  color: #6ab8d6;
   text-decoration: none;
   font-size: 1rem;
+}
+.answer {
+  color: #148fc0;
 }
 </style>

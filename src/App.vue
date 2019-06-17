@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <img alt="background image numbers" src="./assets/blackNumber.jpg" width="100%">
+  <div id="app">  
     <h1>NUMERATE PLAYGROUND</h1>
     <p>For the love of all things dates and numbers</p>
+    <img alt="background image numbers" src="./assets/blackNumber.jpg" width="100%">
     <router-view/>
   </div>
 </template>
@@ -20,9 +20,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  /* background-image: url("./assets/blackNumber.jpg"); */
+  color: #2c3e50; 
+  /* background-image: url("./assets/numBack.jpg");
+  background-size: 100%; */
 }
 
 
